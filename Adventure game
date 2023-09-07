@@ -1,0 +1,317 @@
+class Intro:
+
+    print(".           ************************************.           ")
+    print(".           APOCALYPSE TEXT ADVENTURE GAME.           ")
+    print(".           ************************************.           \n\n\n")
+    def __init__(self):
+        print('' )
+        print('')
+        self.name = input("Enter your name:  ")
+        start = f"Welcome to the adventure game.\n. Where your decisions determine the outcome.\n. So {self.name} Welcome to the apocalypse\n"
+        print(start)
+
+
+class Apocalypse(Intro):
+   def __init__(self):
+       super().__init__()
+       print("\n\nYou live in a secluded area surrounded by a dense forest .\n You wake up for your morning drive to find the streets to your home pitted and the cars around your neighbourhood in states of damage\n")
+       print("You become confused as this isnt supposed to happen. You turn around and pick up your phone to check the news and make sense of the havoc")
+       print("As you dip your hands in your pocket you realize you left your phone in your room.")
+       print("You reverse the car but you hear a weird sound \n")
+       print("What do want to do \n")
+       print("1.Check it out \n 2.Drive back home\n")
+       self.dog = 0
+       self.fortify = 0
+       self.special_decision = 0
+       self.player_died=False
+
+   def level1(self):
+       intro_choice= int(input(""))
+       level1="\n LEVEL 1 :The peculiar girl\n"
+     
+     
+       if intro_choice == 1:
+         print(level1)
+         print("\n\nYou turned around and went toward the source of the strange sound and to your suprise you saw a little kid caught clutching a dog.You called out to her but she was busy with the dog\n")
+         print("Upon close inspection you realised ther was something rather odd the girl was cluthing the dogs mouth to keep it from growling\n")
+         print("Then you saw a body moving shakily around the bushes\n\n")
+         print("Would you ")
+         print("1.shout after the figure")
+         print("2.come closer to the girl but avoid the approaching figure")
+         choice1 = int(input())
+       
+         
+         if choice1 == 1:
+             print("\n\nYou shout after the figure which seems to pay you no mind,You shout again and still it doesnt pay you heed so you step deeper into the bush and call out")
+             print("You: hey there i was calling you back there, atleast have the decency to reply back")
+             print("The figure turns back to you with a terrified expression and says 'They are coming, all is lost' \n This happens as if the figure is in a daze.You try to placate it but it turns violent and attacks you")
+             print("having nothing at hand you fall and receive multiple injuries but out of nowhere the girl you saw shoots the figure off of you")
+             print("Now looking at it you realize you stand near the corpse of one of your neighbors ")
+             print("the girl stares at you and you realize there are marks on your body. without hesitation the girl then shoots you too")
+             print("You died")
+             self.player_died=True
+             
+     
+         
+         elif choice1 == 2:
+              print(level1)
+              print("\n \nYou carefully approach the girl and tap her on the shoulders immediately she spins and points her gun at you")
+              print("taken aback you double back and introduce yourself to her")
+              print("she looks all over you as if searching for something and then looks in the direction of the retreating figure")
+              print("You: are you running away from that person.\n she nods then \n You: its not safe here lets go to my house and wait till your parents come and get you ")
+              print("You double back to the car and drive back home all the while the girl monitors you like a feral cat about to spring")
+              print("You try to make small talk but get ignored and she warns you that if you try anything she will shoot you")
+              print("You take her home and she shyly asks for the bathroom.You then prepare a meal for two all the while thinking of the events that just occured ")
+              print("You turn around and set the food on the table she looks at you suspiciously so you take a bite to show her its not poisoned then she falls to the meal  like a starving wolf ")
+              print("You were staring at her intently with a brooding expression. she looks up and asks 'you look like you want to ask something let it out.I hate being gawked at' ")
+              print("What do you ask")
+              print("1. how come you where all alone in the woods")
+              print("2. I was wondering what the hell is happening")
+       
+         
+         else:
+             print("Invalid response")
+
+
+      
+         
+
+       elif intro_choice == 2:
+          print(level1)
+          print("\n \nYou get into the car and rev it up at full speed \n")
+          print("You find your phone and check the news/")
+          
+          print("Just then you see a girl running towards the house. She looks ragged and a figure is in pursuit if  her /n")
+          print("do you?\n")
+          print("1. let her in")
+          print("2. leave her outside")
+          choice1= int(input())
+
+          if choice1==1:
+             print("You hurriedly open the door and she bursts in all sweaty. The figure follows closely behind and almost enters . ")
+             print("You: help me close the door before whatever that is manages to get in")
+             print("The figure turns back to you with a  hungry expression and growls 'They are coming, all is lost' \n You fall in a daze as you try to keep it from entering it turns violent and trys to attacks you")
+             print("having nothing at hand you fall and it almost gets in,but out of nowhere the girl you saw shoots the figure off of you")
+             print("the girl stares at you and you realize the body is dead. without hesitation the girl then closes the door and bolts it up")
+             print("What do you ask")
+             print("1. how come you where all alone in the woods")
+             print("2. I was wondering what the hell is happening")
+       
+         
+          elif choice1 == 2:
+              print("\n\nShe sees you inside the house and forces her way into the house")
+              print("taken aback you double back and act suprised and alert")
+              print("she looks all over you as if searching for something and then looks in the direction of the retreating figure")
+              print("She then takes off her gun and shoots the figure before it gets too close")
+              print("She then points the gun at you with a pissed expression on her face.\n Her: you idiot i could have died out there.How much of a coward can you be? ")
+              print("You: Am sorry(scared voice) I was just doing what i thought will increase my chances if survival. I woke up to a nightmare and I just want this dream to end")
+              print("She looks at you with a disgusted but relaxed expression and you suggest having lunch.\n she consents.\nYou take her to the dinning room and she asks for the bathroom.You then prepare a meal for two all the while thinking of the events that just occured")
+              print("You turn around and set the food on the table she looks at you suspiciously so you take a bite to show her its not poisoned then she falls to the meal  like a starving wolf ")
+              print("You were staring at her intently with a brooding expression. she looks up and asks 'you look like you want to ask something let it out.I hate being gawked at' ")
+              print("What do you ask")
+              print("1. how come you where all alone in the woods")
+              print("2. I was wondering what the hell is happening")
+       
+          else:
+              print("Invalid response")
+
+       else:
+         print("Invalid input try again")
+
+
+   def level2(self):
+     choice1=int(input())
+     level2="Level 2\n THE FIGHT FOR SURViVAL\n\n"
+     print(level2)
+     if choice1==1:
+       print("\n\nHer: Two days ago there was a festivity in the city an everybody in the county attended. Which is why its weird you are still alive(yh that  event i forgot i had some movies to watch so i didnt attend)\n Well when we were in the heat of it some weirdo threw a fog bomb then people started acting weird")
+       print("they startedbeing violent so me and my friends left the venue for home but it was night out we got attack by some people and crashed")
+       print("Two of my friends died by getting eating by whatever the criwd became")
+       print("I ran away with the rest but we decided to part ways after an incident but I was able to get the dog and ammo at a nearby farm so i'm okay")
+       print("You: Thats harsh\n her: yh but thats life \n You:wait so by the info you just gabe me it means that those things will be here anytime soon and since you were mostly unscathed it means they are more active at night \n Damn we need to take precautions \n ")
+       print("\n What do you do/n")
+       print("1. leave the house")
+       print("2. stay but fortify the house")
+       decision_house=int(input())
+       if decision_house==1:
+            print("I think it would be better if we left this place.Because if we left we can have a head start and atleast find a safe place to go to")
+            print("(she nods)\n Okay lets get supplies cause we don't know how long we might take\n Anything in mind")
+            print("Her:Take some weapons and food\n Okay so we have to make do with this knife and one old gun")
+            print("lets get in the car")
+            self.special_decision = 1
+
+
+         
+       elif decision_house==2:
+            print("\n\nYou:'Okay it lets try to block all entry points  in the house and hope to God that they don't manage to get in'")
+            print("Night soon arrived and you set youself on gaurd duty expecting the worst.\n After some time you hear footsteps and the ground seems to rumble slightly \n You start to see the figures of those that were ones human then from nowhere the dog the girl left behind started growling and hitting the door as if demanding to be let in")
+            print("The woman goes to the doir but knowing the outside will be dangerous you held her tight until she calmed down but the figures heard the noise and approached the house")
+            print("one manage to enter at the cost if a leg and armand lunges at the weeping woman whose gun lies next ti you.\n You lash out and shoot it but realize there might be more")
+            print("1. Do you go out and shoot those approaching ")
+            print("2. Block them out till morning")
+            
+            house=int(input())
+            if house==1:
+              print("\n\nYou step out gun in hand and start shooting them ")
+              print("you move further in and continue killing but then they swarm on you and start attacking you")
+              print("you get overwhelmed and a get torn")
+              print("You died")
+              self.player_died=True
+
+
+
+            elif house==2:
+              self.fortify=1
+
+
+            else:
+              print("Invalid response")
+
+         
+       else:
+         print("Invalid response")
+
+     
+     elif choice1 == 2:
+      print(level2)
+      print("\n\nYou see the dog by the woman hurt and torn in the corner, then turn your attention to the gurl sitting across you with a puzzled expression ")
+      print("Her:Well am a type of person who has issues with life and when i was invited to a party i went")
+      print("It was the county fair then at the party smoke started coming from the audience and i suggested to leave \n Something happened there that made our world go to hell")
+      print("I only know two things that those things will kill us and they like the dark plus they multiply through bites maybe")
+      print("You look at the dog again\n What do about this (pointing at the dog) then")
+      print("Her:I will leave it up to you i cant bear to decide its fate")
+      print("Do you ?")
+      print("1. Keep it")
+      print("2. Kill it")
+      decision_dog=int(input())
+
+      if decision_dog==2:
+         print("\n\nNight approaches and dog gets feral")
+         print("you start to hear gutter sounds from it")
+         print("it then goes silent and pounces on you tearing your throat ou")
+         print("You died")
+         self.player_died=True
+         
+         
+      elif decision_dog==1:
+         print("\n\nyou kill the dog and bury it outside")
+         print("You start to hear footsteps approaching the house")
+         print("you take a few supplies and start to gather up some resources and your phone")
+         print("the steps get louder so you call and drag tell the girl to come\n You escape silently running into the forest")
+         self.dog=1
+         
+         
+      else:
+         print("Invalid response try again")
+
+       
+   def level3(self):
+     level3="INTO THE FOREST"
+     print(level3)
+     if self.dog == 1:
+       print("\n\nYou move towards the opposite side of the forest where you don't hear")
+       print(f"You make some progress then the girl asks for your name.\n Sorry that must have been rude my name is  {self.name}  no need to be formal.\n Yours?")
+       print("My name is Alicia. I asked because if you are going to be the last face i see i might as well get to know you as we may share a grave")
+       print("You find a farm nearby and take refuge inside of it.Inside the farm are guns and rakes\n You take them and strap them unti your back")
+       print("You turn on the radio and here a report saying that the army will be taking survivors and leave at 10am tommorrow")
+       print("Do you ")
+       print("1. Leave to get to location")
+       print("2. Stay and try your luck alone")
+       route_1=int(input())
+
+       if route_1==1:
+         print("\n\nThe night was uneventful/In the morning you left with Alicia in tow to the location ")
+         print("On your way you found Two other people who were on their way to the rendezvous point")
+         print("They warn you of gangsters known for preying on women and wish you luck on your way")
+         print("You find the camp just in time before it \n Behind you ,you realize a few  stragglers are left behind")
+         print("the soldiers group and shoot the approaching figures")
+         print("As you leave you look back at the town that you once called home and prepare for the unknown")
+         
+
+       elif route_1==2:
+         print("\n\nThe night was uneventful/In the morning you left with Alicia in tow to find another shelter or at least put enough distance between yourself and the monsters ")
+         print("You manage to move way through the forest and approach the nearby city ")
+         print("'Alicia dont you think it would be best to find a fortified base or a car to continue our journey' she nods and you look around for a highly fortified house or armoured car")
+         print("You look and find a hunting jeep with rear guard with keys in ignition \n Having taking the car ,you then drive to the nearest mart to stack up resources")
+         print("As you enter the mart you start hearing growling sounds from the outside so you turn back and return to the car only to be attacked by a running figure \n Alicia shoots the approaching monsters so you abundon the supplies and get in the car ")
+         print("As you enter the car it doesnt immediately respond you look back at the horde and start praying for it to respond \n when the horde is 100yards away ")
+         print("You rev the car and drive out of the town in the direction of the least populated region of the country\ You ride into the night ,into  a uncertain future")
+
+
+     if self.fortify == 1:
+       print("\n\nYou wake up in the morning after the fight and find the compound in a state of distress as you see body parts strewn about as a result of the nights fight \n You also find the car totalled")
+       print("You call out to the girl and inform her of the situation \n With her help you pack some supplies and set out into the forest")
+       print("Thankfully you dont find any monsters along the path.\n Around noon you find a lone shop and decide to rest there for sometimme")
+       print("After sometime you hear footsteps approaching so you hide in the shop weapons drawn\n You prepare to shoot but the girl stops you")
+       print("Frightened the man you were about shoot looks at the girl. He makes a relieved sigh\n Takes a look at the girl and says'Alicia what are you doing here and why did you almost let the guy kill me'")
+       print("Her:'Wait a minute. how are you alive and where is Diana'\n Him:'Diana is behind me waiting we thought we lost you when the car wrecked'\n Her:'You left me to die and i didnt 'Him:'anyway we found out a nilitary convoy is coming to take survivors want to come with?'")
+       print("1. follow them")
+       print("2. find another shelter")
+      
+       route2=int(input())
+   
+       if route2==1:
+         print("\n\nYou tag along with Alicia friends and look for the road leading to the nearest town")
+         print("But on the way you got attacked by bandits\n You tried protecting Alicia but got hurt")
+         print("You get shot in chest after trying to flee with Alicia")
+         print("You died")
+         self.player_died=True
+         
+       elif route2==2:
+            print("\n\nYou:'sorry but we can't take you up on that offer I think we have better chances alone'\n You leave the shoo with more supplies and set out looking for a new place")
+            print("You take a route that leads you away from the town\n You see a signboard that reads 'Tims farm'\n You follow the sign but realize its on a steep climb with the only way in being a hand operated elevator") 
+            print("You manage to use it and find it suprisingly well stocked with animals and weapons")
+            print("You ask Alicia if she wants to stay . she shyly agrees and starts rummaging through the house. \n She finds a leather bound book and draws your attention to it")
+            print("You start reading and realizes it contains info on the monsters such as their habits and dislike of sunlight .\n You start looking around the house and you find things that indicate this was the farm belonging to a researcher.\n You become intrigued but choose to stay at the farm and see what future this new world contains")
+
+
+       else:
+         print("Invalid option")
+
+         
+     if self.special_decision==1:
+        print("\n\n You take the car and drive away from the the house behind you the girl gasps and you see a horde of the monsters moving towards your house so you rev the car and drive faster")
+        print("In your frenzy to save yourself and Alicia you didn't check where you were going and landed up near a cave ")
+        print("The ground starts to rumble and you have to make a split second decision.\n A moment later you hear a splitting sound and all the far away monsters fall down shrieking")
+        print("A woman emerges from the cave and says 'come with me if you want to live ' ")
+        print("you go with her not knowing what the future holds")
+
+
+     else:
+        print("Invalid option ")
+
+        
+
+       
+
+while True:
+ 
+ apocalypse=Apocalypse()
+ if apocalypse.player_died==False:
+    apocalypse.level1()
+ if apocalypse.player_died==False:
+    apocalypse.level2()
+ if apocalypse.player_died==False:
+    apocalypse.level3()
+ print('')
+ print('')
+ print("Do you want to replay the game ")
+ print("types y to continue any other letter to end")
+ print('')
+ repeat_game=input().lower()
+
+ if repeat_game!="y":
+  print('')
+  print("Thank you for playing")
+  break
+  if apocalypse.player_died==True:
+     print('')
+     print("Do you want to replay the game ")
+     print("types y to continue any other letter to end")
+     print('')
+     repeat_game=input().lower()
+
+     if repeat_game!="y":
+        print('')
+        print("Thank you for playing")
+        break
